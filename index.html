@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> My First Website </title>
+
+    <style>
+      body {
+        font-family: fantasy;
+        background-color: #f0f0f0;
+        text-align: center;
+      }
+
+      h1 {
+        color: blue
+      }
+
+      p {
+        color: red
+      }
+
+      button {
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+    <body>
+      <h1>Welcome to my website</h1>
+
+      <p>This is my first website</p>
+
+      <button onclick="changeColor()">Change background color</button>
+
+      <script>
+          function changeColor(){
+             const colors = ['black', 'blue', 'red', 'green', 'orange', '#f0f0f0'];
+             document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+          }
+      </script>
+    </body>
+
+</html>
